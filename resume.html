@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Your Name</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Resume & Contact</h1>
+            <p>My professional experience and how to get in touch</p>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="resume">
+        <div class="container">
+            <div class="resume-layout">
+                <!-- Main Content -->
+                <div class="resume-main">
+                    <!-- Experience -->
+                    <section class="resume-section">
+                        <h2>Work Experience</h2>
+                        
+                        <div class="timeline-item">
+                            <h3>Job Title</h3>
+                            <p class="company">Company Name | Dates of Employment</p>
+                            <ul>
+                                <li>Responsibility or achievement description</li>
+                                <li>Another responsibility or achievement</li>
+                                <li>Key accomplishment or skill demonstrated</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h3>Previous Job Title</h3>
+                            <p class="company">Previous Company | Dates of Employment</p>
+                            <ul>
+                                <li>Responsibility or achievement description</li>
+                                <li>Another responsibility or achievement</li>
+                                <li>Key accomplishment or skill demonstrated</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Education -->
+                    <section class="resume-section">
+                        <h2>Education</h2>
+                        
+                        <div class="timeline-item">
+                            <h3>Degree Name</h3>
+                            <p class="company">University Name | Graduation Year</p>
+                            <p>Relevant coursework, honors, or achievements</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <h3>Certification or Additional Education</h3>
+                            <p class="company">Institution | Completion Date</p>
+                            <p>Description of certification or course</p>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="resume-sidebar">
+                    <!-- Contact Info -->
+                    <section class="sidebar-section">
+                        <h2>Contact Information</h2>
+                        <ul class="contact-info">
+                            <li>Email: your.email@example.com</li>
+                            <li>Phone: (123) 456-7890</li>
+                            <li>Location: City, State</li>
+                            <li>
+                                <a href="#">LinkedIn Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">GitHub Profile</a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Skills -->
+                    <section class="sidebar-section">
+                        <h2>Technical Skills</h2>
+                        <ul class="skills-list">
+                            <li>Programming Languages</li>
+                            <li>Frameworks & Libraries</li>
+                            <li>Tools & Technologies</li>
+                            <li>Databases</li>
+                            <li>Other Relevant Skills</li>
+                        </ul>
+                    </section>
+
+                    <!-- Download Resume -->
+                    <section class="sidebar-section">
+                        <a href="#" class="btn btn-primary btn-full">Download Resume (PDF)</a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
