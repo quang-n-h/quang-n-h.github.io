@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Quang Nguyen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Vertical Navigation -->
+        <nav class="vertical-nav">
+            <div class="nav-header">
+                <div class="profile-image">
+                    <img src="docs/pic.jpg" alt="Quang Nguyen">
+                </div>
+                <h1>Quang Nguyen</h1>
+                <p>Electrical & Computer Engineering</p>
+                <p>University of Rochester</p>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+            </ul>
+            
+            <div class="contact-info">
+                <p><strong>E-mails:</strong> quangnh654@gmail.com; qnguy13@u.rochester.edu</p>
+                <a href="http://www.linkedin.com/in/qnguyen13" target="_blank">Linkedin Page</a></p>
+                <a href="docs/resume.pdf" target="_blank">Resume (Nov 2025)</a></p>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="projects-section">
+                <h2>Projects</h2>
+                
+                <!-- Research Projects Section -->
+                <div class="section-header">
+                    <h3>Research Projects</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-card research-project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h4><strong>Simulation Model for Multi-Photon Dynamics of a Superconducting Nanostripe Single-Photon detector (SNSPD) and incorporate a Single-Flux Quantum (SFQ) Readout Circuit</strong></h4>
+                            <p class="project-date">Summer 2025-Present</p>
+                            <p>Developed a LTSpice electrothermal model for photon detections. Focused on multi-photon events and quantum readout circuits to enhance photon number resolution.</p>
+                            <a href="docs/research-poster.pdf" target="_blank" class="project-link">Research Poster</a>
+                        </div>
+                        <div class="project-images">
+                            <div class="image-grid-large">
+                                <div class="image-container">
+                                    <img src="docs/snspd-1.jpg" alt="SNSPD Simulation Model">
+                                </div>
+                                <div class="image-container">
+                                    <img src="docs/snspd-2.jpg" alt="SFQ Readout Circuit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship Projects Section -->
+                <div class="section-header">
+                    <h3>Internship Projects</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-card internship-project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h4><strong>PCB board design for the USB-UART Interface</strong></h4>
+                            <p class="project-date">Summer 2024</p>
+                            <p>Designed and implemented an USB-UART circuit board. The project involved schematic design, layout optimization, and thorough testing.</p>
+                            <a href="docs/internship-report.pdf" target="_blank" class="project-link">Internship Report</a>
+                        </div>
+                        <div class="project-images">
+                            <div class="image-container single-large">
+                                <img src="docs/pcb-board.png" alt="PCB Board Design">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Projects Section -->
+                <div class="section-header">
+                    <h3>Course Projects</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="course-projects-grid">
+                    <!-- Headphone Amplifier -->
+                    <div class="project-card course-project">
+                        <div class="project-header">
+                            <h4>Headphone Amplifier Circuit</h4>
+                            <span class="project-semester">Spring 2025</span>
+                        </div>
+                        <p>Used HSPICE to simulate specific test decks for bandwidth, power and THD. Implemented the schematics on the circuit board.</p>
+                        <a href="docs/headphone-report.pdf" target="_blank" class="project-link">Final Design Report</a>
+                        <div class="project-images">
+                            <div class="image-grid-triple">
+                                <div class="image-container">
+                                    <img src="docs/amp-1.jpg" alt="Amplifier Stage 1">
+                                </div>
+                                <div class="image-container">
+                                    <img src="docs/amp-2.jpg" alt="Amplifier Stage 2">
+                                </div>
+                                <div class="image-container">
+                                    <img src="docs/amp-3.jpg" alt="Circuit Implementation">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DC Motor Control -->
+                    <div class="project-card course-project">
+                        <div class="project-header">
+                            <h4>DC Motor Control</h4>
+                            <span class="project-semester">Fall 2024</span>
+                        </div>
+                        <p>Programmed embedded systems using C to control DC motors with PWM signals and analog-to-digital conversion for real-time speed monitoring.</p>
+                        <a href="docs/motor-report.pdf" target="_blank" class="project-link">Final Design Report</a>
+                        <div class="project-images">
+                            <div class="image-grid-double">
+                                <div class="image-container">
+                                    <img src="docs/motor-1.jpg" alt="Motor Control Setup">
+                                </div>
+                                <div class="image-container">
+                                    <img src="docs/motor-2.jpg" alt="PWM Signal Analysis">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HEX Bit Stream Encryption -->
+                    <div class="project-card course-project">
+                        <div class="project-header">
+                            <h4>HEX Bit Stream Encryption</h4>
+                            <span class="project-semester">Spring 2023</span>
+                        </div>
+                        <p>Designed state graph, next-state table, and Karnaugh maps for flip-flop input equations. Implemented logic circuit with three D flip-flops, logic gates, and LEDR [0] as the clock edge.</p>
+                        <a href="docs/encryption-report.pdf" target="_blank" class="project-link">Final Design Report</a>
+                        <div class="project-images">
+                            <div class="image-container single-full">
+                                <img src="docs/encryption-1.png" alt="Encryption Circuit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
