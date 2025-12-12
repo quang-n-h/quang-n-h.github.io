@@ -146,12 +146,15 @@ body {
     background-color: #fff;
     min-height: 100vh;
     border-left: 1px solid #e1e8ed;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
 }
 
 /* Sections */
 .about-section, .news-section, .awards-section, .projects-section {
     margin-bottom: 3rem;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .about-section h2, .news-section h2, .awards-section h2, .projects-section h2 {
@@ -165,7 +168,7 @@ body {
 
 .about-content p {
     margin-bottom: 1.2rem;
-    font-size: 1.05rem;
+    font-size: 1.45rem;
     line-height: 1.7;
     color: #555;
 }
@@ -174,21 +177,24 @@ body {
 .news-items {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 2rem;
+    width: 100%;
 }
 
 .news-item {
     background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 6px;
+    padding: 1.8rem;
+    border-radius: 8px;
     border-left: 3px solid #95a5a6;
     border: 1px solid #e1e8ed;
+    width: 100%;
+    font-size: 1.2rem;
 }
 
 .news-item h3 {
     color: #2c3e50;
     margin-bottom: 0.8rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -202,6 +208,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 .news-links a {
@@ -235,9 +242,10 @@ body {
 
 .news-image img {
     width: 100%;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e1e8ed;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Use cover to fill the space */
+    display: block;
+    transition: transform 0.3s ease;
 }
 
 /* Awards Section */
@@ -258,6 +266,7 @@ body {
     position: relative;
     color: #555;
     line-height: 1.6;
+    font-size: 1.35rem;
 }
 
 .awards-content li:before {
@@ -276,7 +285,7 @@ body {
 
 .teaching-list li {
     margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     color: #666;
 }
 
