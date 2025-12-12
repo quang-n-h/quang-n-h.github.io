@@ -168,7 +168,7 @@ body {
 
 .about-content p {
     margin-bottom: 1.2rem;
-    font-size: 1.45rem;
+    font-size: 1.2rem;
     line-height: 1.7;
     color: #555;
 }
@@ -188,7 +188,7 @@ body {
     border-left: 3px solid #95a5a6;
     border: 1px solid #e1e8ed;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .news-item h3 {
@@ -266,7 +266,7 @@ body {
     position: relative;
     color: #555;
     line-height: 1.6;
-    font-size: 1.35rem;
+    font-size: 1.1rem;
 }
 
 .awards-content li:before {
@@ -275,7 +275,7 @@ body {
     font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .teaching-list {
@@ -285,7 +285,7 @@ body {
 
 .teaching-list li {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
 }
 
