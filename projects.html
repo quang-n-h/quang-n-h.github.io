@@ -15,19 +15,21 @@
                     <img src="docs/pic.jpg" alt="Quang Nguyen">
                 </div>
                 <h1>Quang Nguyen</h1>
-                <p>Electrical & Computer Engineering</p>
-                <p>University of Rochester</p>
+                <p>Electrical &amp; Computer Engineering</p>
+                <p>Georgia Institute of Technology</p>
             </div>
-            
+
             <ul class="nav-links">
                 <li><a href="index.html">About Me</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
             </ul>
-            
+
             <div class="contact-info">
-                <p><strong>E-mails:</strong> quangnh654@gmail.com; qnguy13@u.rochester.edu</p>
-                <a href="http://www.linkedin.com/in/qnguyen13" target="_blank">Linkedin Page</a></p>
-                <a href="docs/resume.pdf" target="_blank">Resume (Jan 2026)</a></p>
+                <p><strong>Contact:</strong> quangnh654@gmail.com; qnguyen358@gatech.edu</p>
+                <p><a href="https://github.com/quang-n-h" target="_blank">GitHub</a></p>
+                <p><a href="http://www.linkedin.com/in/qnguyen13" target="_blank">LinkedIn Page</a></p>
+                <p><a href="docs/resume.pdf" target="_blank">Resume (Jan 2026)</a></p>
             </div>
         </nav>
 
@@ -35,54 +37,26 @@
         <main class="main-content">
             <section class="projects-section">
                 <h2>Projects</h2>
-                
-                <!-- Research Projects Section -->
+
+                <!-- Independent Projects Section -->
                 <div class="section-header">
-                    <h3>Research Projects</h3>
+                    <h3>Independent Projects</h3>
                     <div class="section-divider"></div>
                 </div>
 
-                <div class="project-card research-project">
-                    <div class="project-content">
-                        <div class="project-text">
-                            <h4><strong>Simulation Model for Multi-Photon Dynamics of a Superconducting Nanostripe Single-Photon detector (SNSPD) and incorporate a Single-Flux Quantum (SFQ) Readout Circuit</strong></h4>
-                            <p class="project-date">Summer 2025-Present</p>
-                            <p>Developed a LTSpice electrothermal model for photon detections. Focused on multi-photon events of a single SNSPD (intrinsic) and superconducting readout circuits in PSCAN2 to enhance photon number resolution and photon counting using SFQ pulses.</p>
-                            <a href="docs/research-poster.pdf" target="_blank" class="project-link">Research Poster</a>
-                            <a href="docs/snspd.pdf" target="_blank" class="project-link">SNSPD Abstract</a>
+                <div class="course-projects-grid">
+                    <div class="project-card course-project">
+                        <div class="project-header">
+                            <h4>MIPS 32-bit 5-Stage Pipelined Processor</h4>
+                            <span class="project-semester">2025</span>
                         </div>
-                        <div class="project-images">
-                            <div class="image-grid-large">
-                                <div class="image-container">
-                                    <img src="docs/snspd-1.jpg" alt="SNSPD Simulation Model">
-                                </div>
-                                <div class="image-container">
-                                    <img src="docs/snspd-2.jpg" alt="SFQ Readout Circuit">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Internship Projects Section -->
-                <div class="section-header">
-                    <h3>Internship Projects</h3>
-                    <div class="section-divider"></div>
-                </div>
-
-                <div class="project-card internship-project">
-                    <div class="project-content">
-                        <div class="project-text">
-                            <h4><strong>PCB board design for the USB-UART Interface</strong></h4>
-                            <p class="project-date">Summer 2024</p>
-                            <p>Designed and implemented an USB-UART circuit board. The project involved schematic design, layout optimization, and thorough testing.</p>
-                            <a href="docs/internship-report.pdf" target="_blank" class="project-link">Internship Report</a>
-                        </div>
-                        <div class="project-images">
-                            <div class="image-container single-large">
-                                <img src="docs/pcb-board.png" alt="PCB Board Design">
-                            </div>
-                        </div>
+                        <p>Designed a 32-bit MIPS processor in Verilog with the classic five-stage pipeline: instruction
+                        fetch, decode, execute, memory, and write-back. Built the datapath and control unit to run a
+                        subset of the MIPS instruction set, and added forwarding and hazard-detection logic so the
+                        pipeline resolves data and control hazards without producing wrong results. Verified the design
+                        with testbenches in simulation.</p>
+                        <!-- TODO: replace with your exact repo URL -->
+                        <a href="https://github.com/quang-n-h/mips-5stage-pipeline" target="_blank" class="project-link">GitHub Repository</a>
                     </div>
                 </div>
 
@@ -99,10 +73,12 @@
                             <h4>Semiconductor Devices</h4>
                             <span class="project-semester">Fall 2025</span>
                         </div>
-                        <p>Wrote an overview paper about semiconductor based single-photon detectors, specifically SPADs.</p>
-                        <a href="docs/Term Paper_223.pdf" target="_blank" class="project-link">Final Term paper</a>
+                        <p>Wrote a survey paper on semiconductor single-photon detectors, focusing on single-photon
+                        avalanche diodes (SPADs). Explained how a reverse-biased diode driven past its breakdown voltage
+                        turns one absorbed photon into a measurable current pulse, and compared device structures along
+                        with their dark-count and afterpulsing behavior and typical applications.</p>
+                        <a href="docs/Term Paper_223.pdf" target="_blank" class="project-link">Final Term Paper</a>
                     </div>
-                </div>
 
                     <!-- Headphone Amplifier -->
                     <div class="project-card course-project">
@@ -110,7 +86,9 @@
                             <h4>Headphone Amplifier Circuit</h4>
                             <span class="project-semester">Spring 2025</span>
                         </div>
-                        <p>Used HSPICE to simulate specific test decks for bandwidth, power and THD. Implemented the schematics on the circuit board.</p>
+                        <p>Designed a multi-stage headphone amplifier and verified it in HSPICE, writing separate test
+                        decks to measure bandwidth, output power, and total harmonic distortion (THD). Built the
+                        amplifier on a physical board and confirmed it matched the simulated performance.</p>
                         <a href="docs/headphone-report.pdf" target="_blank" class="project-link">Final Design Report</a>
                         <div class="project-images">
                             <div class="image-grid-triple">
@@ -133,7 +111,9 @@
                             <h4>DC Motor Control</h4>
                             <span class="project-semester">Fall 2024</span>
                         </div>
-                        <p>Programmed embedded systems using C to control DC motors with PWM signals and analog-to-digital conversion for real-time speed monitoring.</p>
+                        <p>Wrote embedded C firmware to drive a DC motor. Used PWM signals to set the motor speed and the
+                        on-chip analog-to-digital converter to read speed feedback in real time, closing the loop between
+                        the commanded and actual speed.</p>
                         <a href="docs/motor-report.pdf" target="_blank" class="project-link">Final Design Report</a>
                         <div class="project-images">
                             <div class="image-grid-double">
@@ -153,7 +133,10 @@
                             <h4>HEX Bit Stream Encryption</h4>
                             <span class="project-semester">Spring 2023</span>
                         </div>
-                        <p>Designed state graph, next-state table, and Karnaugh maps for flip-flop input equations. Implemented logic circuit with three D flip-flops, logic gates, and LEDR [0] as the clock edge.</p>
+                        <p>Designed a small finite-state machine that encrypts a hex bit stream. Worked through the state
+                        graph, next-state table, and Karnaugh maps to derive the flip-flop input equations, then built
+                        the circuit from three D flip-flops and logic gates, using a pushbutton (LEDR[0]) as the clock
+                        edge.</p>
                         <a href="docs/encryption-report.pdf" target="_blank" class="project-link">Final Design Report</a>
                         <div class="project-images">
                             <div class="image-container single-full">
@@ -169,7 +152,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
-

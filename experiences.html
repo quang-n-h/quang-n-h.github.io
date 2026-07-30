@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences - Quang Nguyen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Vertical Navigation -->
+        <nav class="vertical-nav">
+            <div class="nav-header">
+                <div class="profile-image">
+                    <img src="docs/pic.jpg" alt="Quang Nguyen">
+                </div>
+                <h1>Quang Nguyen</h1>
+                <p>Electrical &amp; Computer Engineering</p>
+                <p>Georgia Institute of Technology</p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="experiences.html" class="active">Experiences</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+
+            <div class="contact-info">
+                <p><strong>Contact:</strong> quangnh654@gmail.com; qnguyen358@gatech.edu</p>
+                <p><a href="https://github.com/quang-n-h" target="_blank">GitHub</a></p>
+                <p><a href="http://www.linkedin.com/in/qnguyen13" target="_blank">LinkedIn Page</a></p>
+                <p><a href="docs/resume.pdf" target="_blank">Resume (Jan 2026)</a></p>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="projects-section">
+                <h2>Experiences</h2>
+
+                <!-- Research -->
+                <div class="section-header">
+                    <h3>Research</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-card research-project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h4><strong>Superconducting Photon-Number-Resolving Readout</strong></h4>
+                            <p class="project-date">Georgia Tech &amp; University of Rochester, Summer 2025 - Present</p>
+                            <p>Built an electrothermal LTspice model that reproduces the multi-photon response of a
+                            single superconducting nanowire single-photon detector (SNSPD), capturing how the intrinsic
+                            detector output changes with the number of photons absorbed at the same time. Designed and
+                            simulated rapid single-flux-quantum (RSFQ) circuits in PSCAN2 to convert that analog detector
+                            pulse into digital photon-number information.</p>
+                            <p>Currently building a demultiplexer in SFQ logic - using DC-to-SFQ converters, AND cells,
+                            splitters, and coincidence correlators - that takes one SNSPD input pulse and routes it to
+                            separate output lines, one per number of simultaneous photons. This gives on-chip
+                            photon-number resolution, which can be used to characterize single-photon sources and to
+                            support protocols such as quantum teleportation and photonic quantum computing.</p>
+                            <a href="docs/research-poster.pdf" target="_blank" class="project-link">Research Poster</a>
+                            <a href="docs/snspd.pdf" target="_blank" class="project-link">SNSPD Abstract</a>
+                        </div>
+                        <div class="project-images">
+                            <div class="image-grid-large">
+                                <div class="image-container">
+                                    <img src="docs/snspd-1.jpg" alt="SNSPD Simulation Model">
+                                </div>
+                                <div class="image-container">
+                                    <img src="docs/snspd-2.jpg" alt="SFQ Readout Circuit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internships -->
+                <div class="section-header">
+                    <h3>Internships</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="project-card internship-project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h4><strong>Hardware Engineer Intern &mdash; Vita Imaging</strong></h4>
+                            <p class="project-date">Summer 2024</p>
+                            <p>Designed a USB-to-UART serial communication board for a medical device, built around the
+                            FT232RL bridge chip with an LDO regulator supplying both 1.8&nbsp;V and 2.8&nbsp;V power
+                            domains. Added ferrite beads and TVS diodes to protect the board from ESD and electrical
+                            noise. Drew the system block diagrams and schematics, laid out the PCB with proper trace
+                            widths and USB&nbsp;2.0 differential-pair spacing, and selected components to meet the
+                            electrical requirements. The board was assembled and worked as a successful prototype.</p>
+                            <a href="docs/internship-report.pdf" target="_blank" class="project-link">Internship Report</a>
+                        </div>
+                        <div class="project-images">
+                            <div class="image-container single-large">
+                                <img src="docs/pcb-board.png" alt="USB-UART PCB Board">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card internship-project">
+                    <div class="project-content">
+                        <div class="project-text">
+                            <h4><strong>Electrical Engineer Intern &mdash; Vietnam Electricity Group (EVN)</strong></h4>
+                            <p class="project-date">Summer 2023</p>
+                            <p>Tested transducers, transformers, and protective relays for correct function and for
+                            tolerance to environmental conditions, using instruments such as the OMICRON CMC 256plus and
+                            Tettex 2793, and checked the results against technical manuals and industry standards. Set up
+                            automated testing for REM615 protection relays, and helped with power-system engineering
+                            tasks including reading electrical schematics and grounding diagrams and taking power
+                            measurements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistant -->
+                <div class="section-header">
+                    <h3>Teaching Assistant</h3>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="awards-content">
+                    <ul class="teaching-list">
+                        <li>Calculus II (MATH 162), University of Rochester - Fall 2023</li>
+                        <li>Mechanics (PHYS 121), University of Rochester - Spring 2024</li>
+                        <li>C/C++ Programming (ECE 114), University of Rochester - Spring 2024</li>
+                        <li>Electricity &amp; Magnetism (PHYS 122), University of Rochester - Fall 2024</li>
+                        <li>Electromagnetic Waves (ECE 230), University of Rochester - Fall 2025</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
