@@ -256,24 +256,17 @@ body {
 }
 
 .awards-content li:before {
-    content: "\2022";
+    content: "\25AA";
     position: absolute;
     left: 0;
-    color: #95a5a6;
-    font-weight: bold;
+    top: -0.05em;
+    color: #2c3e50;
+    font-size: 1.05em;
 }
 
+/* Teaching list matches the awards list (same color + square bullet) */
 .teaching-list {
     margin: 0;
-}
-
-.teaching-list li {
-    color: var(--muted);
-}
-
-.teaching-list li:before {
-    content: "\203A";
-    color: #7f8c8d;
 }
 
 /* --- Subsection headers (Research / Internships / etc.) --- */
@@ -287,8 +280,8 @@ body {
 
 .section-header h3 {
     color: var(--heading);
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.55rem;
+    font-weight: 700;
     margin-bottom: 0.4rem;
 }
 
@@ -320,9 +313,12 @@ body {
 }
 
 .research-project .project-text h4,
-.internship-project .project-text h4 {
+.internship-project .project-text h4,
+.research-project .project-text h4 strong,
+.internship-project .project-text h4 strong {
     color: var(--heading);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     line-height: 1.4;
     margin-bottom: 0.4rem;
 }
