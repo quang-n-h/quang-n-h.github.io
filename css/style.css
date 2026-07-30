@@ -1,6 +1,7 @@
 /* ============================================================
    Quang Nguyen - Personal Website
-   Palette: #2c3e50 / #34495e / #95a5a6 / #ecf0f1 / #f8f9fa
+   Clean, borderless academic layout.
+   Palette: #2c3e50 / #34495e / #95a5a6 sidebar; slate text, blue links.
    ============================================================ */
 
 /* --- Reset & base --- */
@@ -10,11 +11,26 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text: #2f2f33;
+    --muted: #6b7280;
+    --heading: #2c3e50;
+    --link: #2a6fb0;
+    --rule: #e2e5e9;
+    --sidebar: #2c3e50;
+}
+
+html {
+    font-size: 17px;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* --- Layout --- */
@@ -26,7 +42,7 @@ body {
 /* --- Vertical navigation (fixed sidebar) --- */
 .vertical-nav {
     width: 260px;
-    background: #2c3e50;
+    background: var(--sidebar);
     color: #ecf0f1;
     padding: 2rem 1.5rem;
     display: flex;
@@ -65,7 +81,7 @@ body {
     font-size: 1.35rem;
     margin-bottom: 0.5rem;
     color: #ecf0f1;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .nav-header p {
@@ -81,38 +97,35 @@ body {
 }
 
 .nav-links li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
 }
 
 .nav-links a {
     display: block;
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 1rem;
     color: #bdc3c7;
     text-decoration: none;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border-left: 3px solid transparent;
     transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
     color: #ecf0f1;
     background: #34495e;
-    border-color: #7f8c8d;
 }
 
 .nav-links a.active {
     color: #ecf0f1;
     background: #34495e;
-    border-left: 3px solid #95a5a6;
-    font-weight: 500;
+    border-left-color: #95a5a6;
+    font-weight: 600;
 }
 
 .contact-info {
-    background: #34495e;
-    padding: 1.1rem;
-    border-radius: 6px;
     margin-top: auto;
-    border: 1px solid #3d566e;
+    padding-top: 1.2rem;
+    border-top: 1px solid #34495e;
 }
 
 .contact-info p {
@@ -136,107 +149,94 @@ body {
 .main-content {
     flex: 1;
     margin-left: 260px;
-    padding: 2rem 2.5rem;
-    background: #fff;
+    padding: 2.5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* --- Sections --- */
+/* --- Sections: no boxes, generous width --- */
 .about-section,
 .news-section,
 .awards-section,
 .projects-section {
     width: 100%;
-    max-width: 1000px;
-    margin-bottom: 2.5rem;
+    max-width: 1120px;
+    margin-bottom: 2.75rem;
 }
 
 .about-section h2,
 .news-section h2,
 .awards-section h2,
 .projects-section h2 {
-    color: #2c3e50;
-    font-size: 1.7rem;
-    font-weight: 500;
+    color: var(--heading);
+    font-size: 1.65rem;
+    font-weight: 600;
     margin-bottom: 1.3rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid var(--rule);
+}
+
+/* Unified body text across every page */
+.about-content p,
+.news-item p,
+.awards-content li,
+.research-project .project-text p,
+.internship-project .project-text p,
+.course-project p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text);
+}
+
+/* Content links (plain, academic style) */
+.about-content a,
+.news-links a,
+.project-link {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.about-content a:hover,
+.news-links a:hover,
+.project-link:hover {
+    text-decoration: underline;
 }
 
 /* --- About --- */
 .about-content p {
     margin-bottom: 1rem;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #555;
 }
 
 /* --- News --- */
 .news-items {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 100%;
 }
 
-.news-item {
-    background: #f8f9fa;
-    padding: 1.6rem;
-    border-radius: 8px;
-    border: 1px solid #e1e8ed;
-    border-left: 3px solid #95a5a6;
-}
-
 .news-item p {
-    margin-bottom: 1rem;
-    font-size: 1.05rem;
-    color: #555;
-    line-height: 1.65;
+    margin-bottom: 0.8rem;
 }
 
 .news-links {
     display: flex;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-wrap: wrap;
-    margin-bottom: 1.3rem;
-}
-
-.news-links a {
-    background: #95a5a6;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    border: 1px solid #7f8c8d;
-    transition: background 0.2s ease;
-}
-
-.news-links a:hover {
-    background: #7f8c8d;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 /* --- Awards & teaching list --- */
-.awards-content {
-    background: #f8f9fa;
-    padding: 1.4rem 1.5rem;
-    border-radius: 6px;
-    border: 1px solid #e1e8ed;
-}
-
 .awards-content ul {
     list-style: none;
 }
 
 .awards-content li {
     position: relative;
-    margin-bottom: 0.9rem;
-    padding-left: 1.5rem;
-    color: #555;
-    line-height: 1.6;
-    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    padding-left: 1.4rem;
 }
 
 .awards-content li:last-child {
@@ -256,7 +256,7 @@ body {
 }
 
 .teaching-list li {
-    color: #666;
+    color: var(--muted);
 }
 
 .teaching-list li:before {
@@ -264,114 +264,103 @@ body {
     color: #7f8c8d;
 }
 
-/* --- Projects: section headers --- */
+/* --- Subsection headers (Research / Internships / etc.) --- */
 .section-header {
-    margin: 2.5rem 0 1.5rem;
+    margin: 2.25rem 0 1.25rem;
 }
 
 .section-header:first-of-type {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 }
 
 .section-header h3 {
-    color: #2c3e50;
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    color: var(--heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
 }
 
 .section-divider {
-    height: 2px;
-    background: linear-gradient(90deg, #95a5a6, transparent);
+    height: 1px;
+    background: var(--rule);
 }
 
-/* --- Project cards --- */
+/* --- Project / experience entries: borderless, stacked --- */
 .project-card {
-    background: #fff;
-    border: 1px solid #e1e8ed;
-    border-radius: 8px;
-    padding: 1.8rem;
-    margin-bottom: 1.8rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-bottom: 2rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--rule);
 }
 
-.project-card:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
+.project-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
-/* Research & internship: text first, images stacked below.
-   Cards with no images take no extra vertical space. */
+/* Text first, images stacked below. Empty image blocks take no space. */
 .research-project .project-content,
 .internship-project .project-content {
     display: block;
 }
 
 .project-images {
-    margin-top: 1.3rem;
+    margin-top: 1.2rem;
 }
 
 .research-project .project-text h4,
 .internship-project .project-text h4 {
-    color: #2c3e50;
+    color: var(--heading);
     font-size: 1.2rem;
     line-height: 1.4;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.4rem;
 }
 
 .research-project .project-text p,
 .internship-project .project-text p {
-    color: #555;
-    line-height: 1.65;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
 
 .project-date {
-    color: #7f8c8d;
+    color: var(--muted);
     font-style: italic;
     font-size: 0.9rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
 }
 
-/* --- Image grids --- */
+/* --- Image grids (light frame only, no card) --- */
 .image-grid-large {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .image-grid-double {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
+    max-width: 640px;
 }
 
 .image-grid-triple {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.25rem;
 }
 
 .image-container {
     width: 100%;
     overflow: hidden;
-    border-radius: 8px;
-    border: 1px solid #e1e8ed;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+    background: #fafafa;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 8px;
+    padding: 6px;
     display: block;
-    transition: transform 0.3s ease;
-}
-
-.image-container:hover img {
-    transform: scale(1.02);
 }
 
 /* Image heights per context */
@@ -382,69 +371,60 @@ body {
 .course-project .image-grid-double .image-container { height: 200px; }
 .course-project .single-full .image-container { height: 250px; }
 
-/* --- Course projects grid --- */
+/* --- Projects: single vertical column, full width --- */
 .course-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 1.8rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .course-project {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+    margin-bottom: 2rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--rule);
+}
+
+.course-project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .course-project .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 0.9rem;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
 }
 
 .course-project .project-header h4 {
-    color: #2c3e50;
-    font-size: 1.1rem;
+    color: var(--heading);
+    font-size: 1.2rem;
+    font-weight: 600;
     margin: 0;
-    flex: 1;
 }
 
 .project-semester {
-    background: #95a5a6;
-    color: #fff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
     margin-left: 1rem;
     white-space: nowrap;
 }
 
 .course-project p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.3rem;
-    flex: 1;
+    margin-bottom: 0.9rem;
 }
 
-/* --- Project links --- */
+/* --- Links row --- */
 .project-link {
     display: inline-block;
-    background: #2c3e50;
-    color: #fff;
-    padding: 0.55rem 1.1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    border: 1px solid #34495e;
-    margin: 0 0.5rem 0.8rem 0;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    margin: 0 1.25rem 0.4rem 0;
 }
 
-.project-link:hover {
-    background: #34495e;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.project-link:before {
+    content: "\2192\00a0";
+    color: var(--link);
 }
 
 /* ============================================================
@@ -455,7 +435,7 @@ body {
 
     .main-content {
         margin-left: 230px;
-        padding: 1.75rem 2rem;
+        padding: 2rem;
     }
 
     .research-project .image-container { height: 200px; }
@@ -503,6 +483,7 @@ body {
         text-align: center;
         padding: 0.6rem;
         font-size: 0.9rem;
+        border-left: none;
     }
 
     .main-content {
@@ -510,23 +491,12 @@ body {
         padding: 1.5rem;
     }
 
-    .research-project .image-grid-large,
-    .course-projects-grid {
+    .research-project .image-grid-large {
         grid-template-columns: 1fr;
     }
 
     .image-grid-triple {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .course-project .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .project-semester {
-        margin-left: 0;
-        margin-top: 0.5rem;
     }
 
     .research-project .image-container,
@@ -543,14 +513,15 @@ body {
 
     .nav-links { flex-direction: column; }
 
-    .news-links { flex-direction: column; }
+    .news-links { flex-direction: column; gap: 0.4rem; }
 
     .main-content { padding: 1rem; }
 
     .about-section h2,
     .news-section h2,
     .awards-section h2,
-    .projects-section h2 { font-size: 1.5rem; }
+    .projects-section h2 { font-size: 1.45rem; }
 
-    .image-grid-triple { grid-template-columns: 1fr; }
+    .image-grid-triple,
+    .image-grid-double { grid-template-columns: 1fr; }
 }
