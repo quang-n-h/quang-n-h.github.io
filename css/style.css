@@ -301,19 +301,15 @@ body {
     transform: translateY(-2px);
 }
 
-/* Research & internship two-column layout */
-.research-project .project-content {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 2.5rem;
-    align-items: start;
+/* Research & internship: text first, images stacked below.
+   Cards with no images take no extra vertical space. */
+.research-project .project-content,
+.internship-project .project-content {
+    display: block;
 }
 
-.internship-project .project-content {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: 2.5rem;
-    align-items: center;
+.project-images {
+    margin-top: 1.3rem;
 }
 
 .research-project .project-text h4,
@@ -379,6 +375,7 @@ body {
 }
 
 /* Image heights per context */
+.news-item .image-grid-double .image-container { height: 150px; }
 .research-project .image-container { height: 220px; }
 .internship-project .single-large .image-container { height: 280px; }
 .course-project .image-grid-triple .image-container { height: 180px; }
@@ -461,10 +458,6 @@ body {
         padding: 1.75rem 2rem;
     }
 
-    .research-project .project-content {
-        grid-template-columns: 1fr 320px;
-    }
-
     .research-project .image-container { height: 200px; }
 }
 
@@ -515,12 +508,6 @@ body {
     .main-content {
         margin-left: 0;
         padding: 1.5rem;
-    }
-
-    .research-project .project-content,
-    .internship-project .project-content {
-        grid-template-columns: 1fr;
-        gap: 1.75rem;
     }
 
     .research-project .image-grid-large,
