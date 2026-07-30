@@ -292,13 +292,10 @@ body {
 
 /* --- Project / experience entries: borderless, stacked --- */
 .project-card {
-    margin-bottom: 2rem;
-    padding-bottom: 1.75rem;
-    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2.25rem;
 }
 
 .project-card:last-child {
-    border-bottom: none;
     margin-bottom: 0;
 }
 
@@ -386,15 +383,11 @@ body {
 }
 
 .course-project {
-    margin-bottom: 2rem;
-    padding-bottom: 1.75rem;
-    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2.25rem;
 }
 
 .course-project:last-child {
-    border-bottom: none;
     margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .course-project .project-header {
