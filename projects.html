@@ -68,13 +68,13 @@
                             <h4>MIPS 32-bit 5-Stage Pipelined Processor</h4>
                             <span class="project-semester">Fall 2025</span>
                         </div>
-                        <p>Designed a 32-bit MIPS processor in Verilog with the classic five-stage pipeline: instruction
-                        fetch, decode, execute, memory, and write-back. Built the datapath and control unit to run a
-                        subset of the MIPS instruction set, and added forwarding and hazard-detection logic so the
-                        pipeline resolves data and control hazards without producing wrong results. Verified the design
-                        with testbenches in simulation.</p>
+                        <p>Designed a 32-bit MIPS processor in Verilog with the classic five-stage structure: 
+                            instruction fetch, decode, execute, memory, and write-back, separated by four 
+                            pipeline registers. Built the datapath, a control unit covering 57 instructions, 
+                            ALU, branch unit, and register file, then compiled the RTL with Verilator and ran 
+                            compiled MIPS programs against it.</p>
                         <!-- TODO: replace with your exact repo URL -->
-                        <a href="https://github.com/quang-n-h/MIPS-ISA-Emulator" target="_blank" class="project-link">Project repo</a>
+                        <a href="https://github.com/quang-n-h/MIPS-pipeline-processor" target="_blank" class="project-link">Project repo</a>
                     </div>
 
                     <div class="project-card course-project">
